@@ -218,6 +218,9 @@ a.deliverable:hover {
     margin-top: 0;
 }
 
+p, li {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
 
 
 /* ==========================================================================
