@@ -4,21 +4,139 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Instructions - COM 421 Final Project</title>
-        <meta name="description" content="">
+        <meta name="description" content="Instructions on how to use Plannr.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="container-1000">
+    <body class="container-1000" id="instructions">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <header>
+            <div id="logo"><img src="img/plannr-logo.png" alt="Plannr logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Index</a></li>
+                    <li><a href="proposal.html"><i class="fa fa-lightbulb-o"></i> Proposal</a></li>
+                    <li class="active"><a href="instructions.html"><i class="fa fa-question-circle"></i> Instructions</a></li>
+                    <li><a href="report.html"><i class="fa fa-file-text-o"></i> Report</a></li>
+                    <li><a href="presentation.html"><i class="fa fa-slideshare"></i> Presentation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1>Instructions</h1>
+
+            <p id="jumpmenu" style="display:none">Jump to: | </p>
+
+            <div class="row">
+                <div class="col8">
+                    <section id="general-instructions">
+                        <h2>General instructions</h2>
+
+                        <p>See <em>Figure 1</em> for a view of the homepage when not logged in.</p>
+
+                        <ol>
+                            <li>Before using this program, you must have an existing Google account.</li>
+                            <ol>
+                                <li>To create an account, “<a href="https://accounts.google.com/signup">click here</a>”.</li>
+                                <li>To sign in with an existing account, just sign in on the homepage.</li>
+                                <ol>
+                                    <li>You will be redirected to a webpage asking for you to grant access to your Google Calendar. We use this to retrieve your existing schedule automatically. Click "Allow Access" to continue the signup process (<em>see Figure 2</em>).</li>
+                                    <li>Once redirected back to our website, select all the calendars (from Google Calendar) you want to share with Plannr.</li>
+                                    <li>Click "Register" to complete the signup process.</li>
+                                </ol>
+                            </ol>
+                            <li>It is also important to ensure that your Google calendar is up to date so that Plannr can create the most accurate meeting time. For example, if you always are commuting to/from work at a certain time, you should add a recurring event in your calendar so Plannr will take that into account.</li>
+                        </ol>
+
+                        <p>Once you have signed in, you should see a screen like <em>Figure 3</em>.</p>
+                    </section>
+
+                    <section id="creating-an-event">
+                        <h2>Creating an event</h2>
+
+                        <p>You must be logged in before you can create any events.</p>
+
+                        <ol>
+                            <li>Click on "Schedule an event" (see <em>Figure 3</em>).</li>
+                            <li>Enter the title of the event into the "Event Title" box (see <em>Figure 4</em>).</li>
+                            <li>Select the range of dates (left side) and times (right side) you want the program to choose from when coming up with an event time.</li>
+                            <li>Enter a list of email accounts you wish to invite to the event. They will receive an email with the remaining steps.</li>
+                            <li>Once you are satisfied with the event details and the list of people you have invited, click "Confirm event" and the event will be created.</li>
+                            <li>As an administrator, you will receive an email once someone has accepted the invitation. You can disable this by clicking on the unsubscribe link in the email, which will turn it off for the particular event. If you wish to turn it off for all events, you can do so on your account settings page.</li>
+                            <li>When everyone has accepted the invitation, Plannr will "automagically" find a time that works for everyone and send everyone an email with that time to confirm it. You can also view people's availabilities on the individual event page (see <em>Figure 6</em>).</li>
+                            <li>If you wish to invite subsequent people to the event, you may add their emails at any time by clicking "Edit Event" in the top menu, then clicking the "email them" link under the event title. You will be prompted to enter the list of emails you wish to invite. See <em>Figure 5</em> for the event editing page.</li>
+                        </ol>
+                    </section>
+
+                    <section id="joining-via-invite">
+                        <h2>Joining an event via invitation</h2>
+
+                        <ol>
+                            <li>Click "Join" link in email</li>
+                            <li>Sign in or sign up (see general instructions for further info)</li>
+                            <li>Once everyone has granted access to their calendar, you will receive another email (see <em>Figure 7</em>) with an automatically selected event time.</li>
+                        </ol>
+                    </section>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                    <section id="troubleshooting">
+                        <h2>Issues to be aware of</h2>
+
+                        <ol>
+                            <li>If anything in your personal schedule changes, make sure you update it in Google Calendar and Plannr will automatically use the latest version of your schedule.</li>
+                            <li>If there is no time that works for everyone invited, Plannr will find the time that works for the most people.</li>
+                            <li>If you choose to revoke access, then Plannr will no longer be able to help you with scheduling. You will be notified via email to reconnect your Google account if there are any issues accessing your Google Calendar.</li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="col4">
+                    <figure>
+                        <a href="img/homepageLoggedOut.png"><img src="img/homepageLoggedOut.png" alt="The Plannr home-page, when a user is logged out." /></a>
+                        <figcaption>Figure 1: The Plannr home-page, when a user is logged out.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/calendarAccess.png"><img src="img/calendarAccess.png" alt="Google requesting access to view your calendars, after you signed in to Plannr." /></a>
+                        <figcaption>Figure 2: Google requesting access to view your calendars, after you signed in to Plannr.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/homepageLoggedIn.png"><img src="img/homepageLoggedIn.png" alt="The Plannr homepage, after the user has logged in." /></a>
+                        <figcaption>Figure 3: The Plannr homepage, after the user has logged in.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/eventCreationPage2.png"><img src="img/eventCreationPage2.png" alt="The event creation page" /></a>
+                        <figcaption>Figure 4: The event creation page.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/eventEditMENU.png"><img src="img/eventEditMENU.png" alt='The "Edit Event" screen.' /></a>
+                        <figcaption>Figure 5: The "Edit Event" screen.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/eventEditPage2.png"><img src="img/eventEditPage2.png" alt="An individual event page, reached by clicking on the event name from the list of available events in Figure 5." /></a>
+                        <figcaption>Figure 6: An individual event page, reached by clicking on the event name from the list of available events in Figure 5.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/finalEventEmail.png"><img src="img/finalEventEmail.png" alt="The email every person invited to a meeting receives after the meeting date and time has been set by Plannr." /></a>
+                        <figcaption>Figure 7: The email every person invited to a meeting receives after the meeting date and time has been set by Plannr (upon everyone giving access to their calendar).</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="imageviewer">
+            <img src="" alt="" />
+            <p id="caption"></p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

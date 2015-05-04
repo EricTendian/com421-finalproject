@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Report - COM 421 Final Project</title>
-        <meta name="description" content="">
+        <meta name="description" content="A full report on Plannr and related tools.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -16,9 +17,133 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <header>
+            <div id="logo"><img src="img/plannr-logo.png" alt="Plannr logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Index</a></li>
+                    <li><a href="proposal.html"><i class="fa fa-lightbulb-o"></i> Proposal</a></li>
+                    <li><a href="instructions.html"><i class="fa fa-question-circle"></i> Instructions</a></li>
+                    <li class="active"><a href="report.html"><i class="fa fa-file-text-o"></i> Report</a></li>
+                    <li><a href="presentation.html"><i class="fa fa-slideshare"></i> Presentation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1>Report</h1>
+
+            <p id="jumpmenu" style="display:none">Jump to: | </p>
+
+            <section id="intro">
+
+                <h2>Introduction</h2>
+
+                <p>Scheduling events has caused people to waste a lot of time. People need a tool which can really help them schedule events quickly and efficiently. The purpose of our project is to help people, to save them from endless negotiation and annoying ping-pong conversation.</p>
+
+                <p>Plannr is is a unique scheduling tool, greatly improved compared to any other existing scheduling tools in market. It’s more efficient, and more thoughtful for every user in a multiple users environment. When a group of users wants to make a schedule, Plannr will integrate with everyone’s Google Calendar and will generate times that everyone is available. If no meeting times are common between all participants, it will generate a time that is common amongst the majority. Plannr has a large market: every Google Calendar user is our potential user. Moreover, our powerful scheduling tool is able to draw attention from people who don't have Google Calendar. Once people start getting to know about our product, we believe that they would give it a try without hesitating.</p>
+
+                <p>There’s no perfect tool in the world. Plannr has shortcomings and potential harmful outcomes. Connecting with Google Calendar brings convenience for users, at the same time, it can bring potential problems. Considering the privacy and other regards, not everyone is willing to update Google Calendar.</p>
+
+            </section>
+
+            <section id="tool-context">
+
+                <h2>Tool Context</h2>
+
+                <p>Plannr is a scheduling tool. It can be used in any scheduling environment.</p>
+
+                <p>Some contexts that Plannr can be used in include planning company meetings, school conferences, and parties.</p>
+
+                <ul>
+                    <li><p><em>Company meetings</em>. Having meetings is the most common routine for people who work in a company, no matter in which country, or what type of company. When people need to consistently send emails back and forth to create events, time is wasted and people can become very impatient. Plannr will make the scheduling process very easy.</p></li>
+                    <li><p><em>School conferences. </em>Many events happen on campus everyday. Students have to meet their group members to do projects. Professors need to meet Teaching Assistants. People who are involved with events and meetings need to make schedules. Using Plannr, all these will become painless and far more efficient.</p></li>
+                    <li><p><em>Parties</em>. Sometimes, people would like to gather with their friends just to have a good time. Because people have such different schedules, Plannr can help friends figure out the best time to have a social gathering.</p></li>
+                </ul>
+
+            </section>
+
+            <section id="users-and-training">
+
+                <h2>Users and Training</h2>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                <h3>User Types</h3>
+
+                <p>There are a great variety of users who might use our product. However, the most significant user types are as follows:</p>
+
+                <ul>
+                    <li><p><em>Students</em> &mdash; Students may use our product for various reasons such as organizing events and coordinating with others, which is a fundamental part of their education. This type of user may include students who are working on project teams, participating same organizations or simply looking for a mutual time to hangout.</p></li>
+                    <li><p><em>Educators</em> &mdash; Educators are also potential users for our product, because they may need to constantly coordinate with Teaching Assistants about course related schedules as well as organizing conferences and meetings among colleagues. This type of user may not use our product as frequently as students do, but they are still an important component of our potential customers.</p></li>
+                    <li><p><em>Administrative Employees</em> &mdash; Administrative employees are our primary users. This type of user covers a great variety and ranges from entry level managers to top-level administrators. Due to this great variety, this user group may include people who are very familiar with modern technologies like those in start-ups as well as people who are not that familiar with technologies like top-level administrators.</p></li>
+                </ul>
+
+                <h3>Required Training</h3>
+
+                <p>As mentioned, different types of users demand different types of trainings.</p>
+
+                <p><em>For those familiar with scheduling software.</em> If someone has used other scheduling tools in the past, their speed of learning may be comparatively high. As a result, their training session can be very short and reduced in steps. Basic trainings include:</p>
+
+                <ol>
+                    <li>Syncing schedules from different platforms</li>
+                    <li>Creating events and sending invitations</li>
+                    <li>Responding to invitations</li>
+                </ol>
+
+                <p><em>For those not familiar with scheduling tools.</em> They may require similar trainings as students most of the time, with only few additional steps involved:</p>
+
+                <ol>
+                    <li>Creating an account and logging in</li>
+                    <li>Navigating to different functions after logging in</li>
+                    <li>Syncing schedules from different platforms</li>
+                    <li>Creating events and sending invitations</li>
+                    <li>Responding to invitations</li>
+                </ol>
+
+            </section>
+
+            <section id="development-history">
+                
+                <h2>Development History</h2>
+
+                <p>Our tool was initially inspired by Doodle, which is a scheduling service online. It helps multiple users to coordinate times on a single calendar, which greatly simplifies the process of scheduling. However, its problems are also significant, e.g. only one user can set up the time.</p>
+
+                <p>Our tool tried to fix this problem by offering various participants the right to choose from designated time slots, which basically allows everyone to choose from available time of their own. Thus offering much more freedom compared with Doodle.</p>
+
+                <p>After investigating this tool, we were inspired by another online service called When2Meet. This tool allows users to choose their own free time slots as well as picturing them in colors. The darker the color for a time slot, the more people are available at that time. This is great visualization from our perspective and we managed to incorporate this feature into our product.</p>
+
+                <p>As we investigated further into customers needs, we found out that it might be better for them to be able to sync their schedule between multiple platforms. As there are many different calendar services online, like Google Calendar and Microsoft Calendar, it would offer us a great advantage if we could automatically sync between this services, thus providing a more precise scheduling product for our customers.</p>
+
+                <p>The result of our development process is the product that features custom editing, precise scheduling as well as easy syncing services that may greatly enhances experiences of our potential users.</p>
+
+            </section>
+
+            <section id="impact-on-stakeholders">
+
+                <h2>Impact on Stakeholders</h2>
+
+                <p>This tool solves a problem that many college students face when trying to set up meeting times. With previous tools on the market, one person is in charge of inputting times that suit them, and they send it out to others to decide whether or not they are available at those times. With Plannr, two things are improved. The first is that the scheduling depends on the availability of ALL members rather than just the individual creating the event. This allows people to be able to attend meetings that complement their current schedule, rather than needing to switch around their schedule or sacrifice their time in order to work with everyone. The second improvement is that a person does not need to waste their time checking off their availability. Instead, they simply allow access to their Google Calendar, and Plannr automatically finds the time that is available for the greatest number of people and creates the event.</p>
+
+                <p>Although this tool has numerous benefits, it also does have some downfalls. The first is that it requires access to a Google Calendar. This could potentially cause two problems. The first is that not everyone has a Google account and they may not want to create one. By requiring a Google account, the tool alienates a certain group of people from being able to use it. The second problem is that if people do have an account, they may not feel comfortable with allowing the program to access their calendar. Another potential problem of this tool is that it requires people to completely update their Google Calendar; many people often fill their calendar with very simple reminders of infrequent events. However, this tool requires that the user input their entire schedule into the calendar. For example, many people do not put their class schedule in their google Calendar because it is a weekly, routine thing. But for Plannr, the user would need to input that information into their calendar, which can be a bit unpleasant.</p>
+
+            </section>
+
+
+            <section id="conclusion">
+                
+                <h2>Conclusion</h2>
+
+                <p>In conclusion, this tool offers a simple, quick way to create meetings or events. It removes the nuisance of needing to fill out a time table of a user’s availability and also removes the problem of one person creating a schedule that other user’s must work around. This tool is universal and can be used by a variety of people for a variety of different events, ranging from meetings to social gatherings. College students, professors and administrative employees would find this tool very helpful in gathering people together for important events.</p>
+
+                <p>The idea of Plannr initially sprang off of the existing tool, called Doodle. The problem with Doodle is that only the creator of the event can input times to set up a meeting. Doodle then sends out a “poll” requiring users to check the times they are available from the times created by the original user. Our team created Plannr to address the flaws that we saw in Doodle.</p>
+
+                <p>Plannr can have a great impact on uses by allowing them to quickly set up meeting times with just the click of a button. All a user must do is update their Google Calendar, then allow access to it to create the event at a time convenient to the greatest amount of people.</p>
+
+            </section>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

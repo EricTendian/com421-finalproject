@@ -192,9 +192,76 @@ html {
  * Content styles
  */
 
+header {
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+
+header > #logo {
+    float: left;
+    margin-right: 2em;
+}
+
+header > #logo > img {
+    height: 3em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul > li {
+    display: inline-block;
+}
+
+nav ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    display: block;
+    padding: 0.75em 1em;
+    margin-right: 1em;
+    background: #eee;
+    transition: background-color 0.5s ease;
+}
+
+nav ul > li > a:hover, nav ul > li.active > a {
+    background: #ccc;
+}
+
+p, li {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+ol > ol {
+    list-style-type: upper-alpha;
+}
+
+ol > ol > ol {
+    list-style-type: decimal;
+}
+
+figure {
+    padding-bottom: 1em;
+    border-bottom: 2px dashed #888;
+}
+
+figure:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+figure > figcaption {
+    font-size: 0.75em;
+}
+
 a.deliverable {
     display: block;
     background: #eee;
+    transition: background-color 0.5s ease;
     margin: 0.5em 0;
     padding: 3em 0;
     text-align: center;
@@ -218,8 +285,41 @@ a.deliverable:hover {
     margin-top: 0;
 }
 
-p, li {
-    font-family: 'Times New Roman', Times, sans-serif;
+p#jumpmenu {
+    font-style: italic;
+}
+
+p#jumpmenu a {
+    font-style: normal;
+}
+
+div#imageviewer {
+    display: none;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+}
+div#imageviewer img, div#imageviewer p {
+    bottom: 0;
+    height: 75vh;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: -10vh;
+    right: 0;
+}
+div#imageviewer p {
+    width: 100vh;
+    padding-top: 75%;
+    color: #fff;
+}
+div#imageviewer p:after {
+    display: block;
+    content: 'Click anywhere to close.';
+    font-style: italic;
 }
 
 
